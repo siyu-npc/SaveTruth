@@ -15,13 +15,13 @@ head = '''
                     .left {
                         float: left;
                         width: 400px;
-                        height: 100%;
+                        height: auto;
                         background-color: green;
                     }
                     .right {
                         background-color: orange;
                         margin-left: 410px;
-                        height: 100%;
+                        height: auto;
                         background-color: lightgreen;
                         padding-top: 10%;
                         padding-left: 20px;
