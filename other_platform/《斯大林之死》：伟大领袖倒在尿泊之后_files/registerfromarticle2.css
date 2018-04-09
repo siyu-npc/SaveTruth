@@ -1,0 +1,749 @@
+﻿
+
+
+body {
+    font-family: Arial,"宋体",Helvetica,sans-serif;
+    font-size: 12px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    border: 0px;
+}
+
+img {
+    border: 0px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+li {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.zc_big {
+    width: 690px;
+    height: 371px;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+}
+
+.zc_txt {
+    padding-top: 28px;
+    padding-left: 29px;
+}
+
+.loginbiaoti {
+    width: 275px;
+    height: 28px;
+    margin-left: 20px;
+    background: url(http://pubimage.360doc.com/register/zctit.gif) no-repeat;
+    text-align: right;
+    line-height: 31px;
+}
+
+    .loginbiaoti a {
+        text-decoration: none;
+        color: #587493;
+        padding-right: 21px;
+        font-size: 12px;
+    }
+
+.sanfang {
+    float: left;
+    margin-top: 19px;
+    z-index: 1000;
+    overflow: hidden;
+    position: absolute;
+    left: 352px;
+}
+
+.sanfangbao li {
+    list-style: none;
+    margin-top: 15px;
+    margin-left: 55px;
+}
+
+.dingwei {
+    position: absolute;
+}
+
+.fuceng {
+    display: block;
+    width: 105px;
+    height: 37px;
+    position: relative;
+    z-index: 2;
+    top: 1px;
+    left: 150px;
+    background: url(http://pubimage.360doc.com/register/shuaxin.gif) no-repeat right;
+}
+
+    .fuceng img {
+        border: none;
+    }
+
+    .fuceng:hover {
+        display: block;
+        width: 105px;
+        height: 37px;
+        background: url(http://pubimage.360doc.com/register/shuaxina.gif) no-repeat right;
+    }
+
+.sanfang_1 {
+    float: left;
+    margin-top: 34px;
+    width: 328px;
+    height: 285px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.sanfangbao_1 {
+    margin-top: 33px;
+}
+
+    .sanfangbao_1 li {
+        list-style: none;
+        margin-top: 15px;
+        margin-left: 294px;
+    }
+.zcsuccedbj{
+	clear:both;
+	width:266px;
+	height:37px;
+	background:url(http://pubimage.360doc.com/register/RegFromArtTip.gif) no-repeat 0 0;
+	font-size:12px;
+	color:#6b6b6b;
+	line-height:37px;
+	padding-left:15px;	
+	}
+.zcsuccedbja{
+	clear:both;
+	width:266px;
+	height:37px;
+	background:url(http://pubimage.360doc.com/register/RegFromArtTip.gif) no-repeat 0 -37px;	
+	font-size:12px;
+	color:#801b1b;
+	line-height:37px;
+	padding-left:15px;	
+	}
+
+.zcbasicinput {
+    BORDER: #d7d7d7 1px solid;
+    padding: 5px 5px 5px 5px;
+    margin-left: 6px;
+    WIDTH: 238px;
+    HEIGHT: 25px;
+    FONT-SIZE: 14px;
+    line-height: 25px;
+}
+
+
+.sinaNote {
+    position: absolute;
+    z-index: 999999;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    margin-left: 6px;
+    margin-top: 0px;
+    width: 268px;
+    border: 1px solid #CCCCCC;
+    border-top: none;
+    background: #ffffff;
+    text-align: left;
+}
+
+.sinaNoteDetail {
+    font-size: 12px;
+    list-style: none;
+    height: 24px;
+    padding: 0 7px;
+    clear: both;
+    line-height: 24px;
+    cursor: pointer;
+    color: #3e3e3e;
+}
+
+.zcduigou {
+    padding-left: 15px;
+    height: 20px;
+    padding-top: 8px;
+}
+
+
+
+.tuijbox {
+    clear: both;
+    width: 248px;
+    margin-left: 6px;
+    margin-top: 0px;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #CCCCCC;
+    border-top: none;
+    z-index: 999;
+    font-size: 12px;
+}
+
+    .tuijbox ul {
+        list-style: none;
+    }
+
+    .tuijbox li {
+        padding-left: 7px;
+        line-height: 24px;
+        color: #3e3e3e;
+        background-image: none;
+    }
+
+.mailListBox {
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    position: absolute;
+    z-index: 9999;
+    display: none;
+    text-align: left;
+}
+
+    .mailListBox ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    .mailListBox li {
+        zoom: 1;
+        overflow: hidden;
+        padding: 0 3px;
+        margin: 0;
+        list-style: none;
+        font-size: 12px;
+        font-family: Arial,Helvetica,sans-serif;
+        line-height: 24px;
+        cursor: pointer;
+        color: #999999;
+    }
+
+        .mailListBox li.hover {
+            background-color: #e0e0e0;
+            color: #035cc1;
+        }
+
+        .mailListBox li.current {
+            background-color: #C1D5EB;
+            color: #035cc1;
+        }
+
+.lan a {
+    text-decoration: none;
+    color: #587493;
+    font-size: 12px;
+}
+
+.yudutk {
+    float: left;
+    padding-top: 2px;
+    *padding-top: 4px;
+    color: #757575;
+    font-size: 12px;
+}
+
+.yanzbox {
+    padding-top: 59px;
+    padding-left: 216px;
+    width: 280px;
+    color: #646464;
+}
+
+.yztit {
+    font-size: 18px;
+    height: 66px;
+    font-family: Microsoft YaHei;
+    color: #343434;
+    padding-left: 10px;
+}
+
+.yzbt {
+    width: 105px;
+    height: 31px;
+    background: url(http://pubimage.360doc.com/register/tit1.gif) no-repeat;
+    font-size: 12px;
+    color: #a9a9a9;
+    line-height: 31px;
+    text-align: center;
+}
+
+.yzbta {
+    width: 105px;
+    height: 31px;
+    background: url(http://pubimage.360doc.com/register/tit1a.gif) no-repeat;
+    font-size: 12px;
+    color: #808080;
+    line-height: 31px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tijiao {
+    display: block;
+    width: 146px;
+    height: 38px;
+    background: url(http://pubimage.360doc.com/register/tit2.gif) no-repeat;
+    cursor: pointer;
+}
+
+    .tijiao:hover {
+        display: block;
+        width: 146px;
+        height: 38px;
+        background: url(http://pubimage.360doc.com/register/tit2a.gif) no-repeat;
+        cursor: pointer;
+    }
+
+
+
+.cengbox {
+    width: 421px;
+    height: 298px;
+    background-color: #fff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    text-align: left;
+    border: 4px solid #8e8e8e;
+}
+
+.cengbj {
+    height: 33px;
+    background-image: url(http://pubimage.360doc.com/cengbj.gif);
+    background-repeat: repeat-x;
+}
+
+.cengleft {
+    color: #4d4d4d;
+    padding-left: 16px;
+    line-height: 32px;
+    font-weight: bold;
+    float: left;
+}
+
+.chas a:link, .chas a:visited {
+    display: block;
+    width: 10px;
+    height: 9px;
+    background-image: url(http://pubimage.360doc.com/chas.gif);
+    background-repeat: no-repeat;
+}
+
+.chas a:hover {
+    display: block;
+    width: 10px;
+    height: 9px;
+    background-image: url(http://pubimage.360doc.com/chasa.gif);
+    background-repeat: no-repeat;
+}
+
+.xxjl {
+    padding-top: 11px;
+    padding-right: 20px;
+}
+
+.yzsmall {
+    padding-left: 64px;
+    clear: both;
+    padding-top: 67px;
+    color: #676767;
+}
+
+.yzboxtop {
+    font-size: 14px;
+    height: 31px;
+    padding-left: 12px;
+}
+
+.yzcfa {
+    float: left;
+    padding-left: 7px;
+    padding-top: 4px;
+}
+
+#backgroundPopup1 {
+    display: block;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: #000;
+    filter: Alpha(Opacity=30, Style=0);
+    opacity: 0.3;
+    border: 1px solid #CECECE;
+    z-index: 110;
+}
+
+
+.baocun {
+    display: block;
+    width: 268px;
+    height: 38px;
+    background: url(http://pubimage.360doc.com/register/btzuc.gif) no-repeat;
+}
+
+    .baocun:hover {
+        display: block;
+        width: 268px;
+        height: 38px;
+        background: url(http://pubimage.360doc.com/register/btzuca.gif) no-repeat;
+    }
+
+.baocun2 {
+    display: block;
+    width: 268px;
+    height: 38px;
+    background: url(http://pubimage.360doc.com/register/btzucnew.gif) no-repeat;
+}
+
+    .baocun2:hover {
+        display: block;
+        width: 268px;
+        height: 38px;
+        background: url(http://pubimage.360doc.com/register/btzucnewa.gif) no-repeat;
+    }
+
+.zcbox2 {
+    height: 373px;
+    width: 690px;
+    background-color: #fff;
+}
+
+.copy_wz {
+    padding-left: 29px;
+    padding-top: 26px;
+}
+
+.leftboxrg1 {
+    float: left;
+    padding-left: 23px;
+    padding-top: 34px;
+}
+
+
+.W_layer {
+    position: absolute;
+    border-radius: 3px;
+    z-index: 9999;
+}
+
+    .W_layer .bg {
+        padding: 3px;
+        border-radius: 4px;
+        background-image: url(http://pubimage.360doc.com/index/layer_bg.png);
+        background-repeat: repeat;
+    }
+
+    .W_layer .content {
+        position: relative;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+    }
+
+    .W_layer .arrow {
+        position: absolute;
+        overflow: hidden;
+        display: block;
+        background-image: url(http://pubimage.360doc.com/index/layer_arrow.png);
+        background-repeat: no-repeat;
+    }
+
+    .W_layer .arrow_t, .W_layer .arrow_b {
+        width: 14px;
+        height: 9px;
+        top: -5px;
+        left: 20px;
+        background-position: 0 0;
+    }
+
+    .W_layer .arrow_b {
+        top: auto;
+        bottom: -5px;
+        background-position: 0 -8px;
+        z-index: 10000;
+    }
+
+.zhucipt {
+    text-align: left;
+    height: 28px;
+    background-color: #ffffff;
+    font-size: 12px;
+    line-height: 28px;
+    padding: 4px 4px;
+    border: 1px solid #d6d6d6;
+    width: 223px;
+    color: #b2b2b2;
+}
+
+.zhucbt {
+    text-align: center;
+    height: 35px;
+    padding-top: 2px;
+}
+
+.hui A:link {
+    COLOR: #696969;
+    TEXT-DECORATION: none;
+}
+
+.hui A:visited {
+    COLOR: #7a597a;
+    TEXT-DECORATION: none;
+}
+
+.hui A:hover {
+    COLOR: #2d609f;
+    TEXT-DECORATION: none;
+}
+
+.dlu2 {
+    width: 108px;
+    height: 32px;
+    float: right;
+}
+
+    .dlu2 a:link, .dlu2 a:visited {
+        display: block;
+        width: 108px;
+        height: 32px;
+        background-image: url(http://pubimage.360doc.com/register/login_dl.gif);
+        background-repeat: no-repeat;
+    }
+
+    .dlu2 a:hover {
+        background-image: url(http://pubimage.360doc.com/register/login_dla.gif);
+    }
+
+.dlu {
+    width: 108px;
+    height: 32px;
+    float: left;
+}
+
+    .dlu a:link, .dlu a:visited {
+        display: block;
+        width: 108px;
+        height: 32px;
+        background-image: url(http://pubimage.360doc.com/register/login_zc.gif);
+        background-repeat: no-repeat;
+    }
+
+    .dlu a:hover {
+        background-image: url(http://pubimage.360doc.com/register/login_zca.gif);
+    }
+
+.fenge {
+    background-image: url(http://pubimage.360doc.com/index/sy-11.gif);
+    background-repeat: repeat-x;
+    height: 7px;
+    background-position: bottom;
+}
+
+.xximg {
+    padding-right: 6px;
+    padding-top: 6px;
+}
+
+.right {
+    float: right;
+}
+
+.dsftb2 {
+    background-image: url(http://pubimage.360doc.com/index/sf40.png);
+    _background-image: url(http://pubimage.360doc.com/index/sf40.gif);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    display: block;
+    float: left;
+    margin: 0px 12px;
+}
+
+.dsf1 {
+    background-position: 0px 0px;
+}
+
+.dsf2 {
+    background-position: 0px -40px;
+}
+
+.dsf3 {
+    background-position: 0px -80px;
+}
+
+.dsfwz2 {
+    line-height: 40px;
+    display: block;
+    color: #000;
+}
+/*add*/
+.zc {
+    margin-left: 20px;
+}
+
+    .zc a {
+        background-image: url(http://pubimage.360doc.com/index/zhuce.gif);
+        background-repeat: no-repeat;
+        width: 250px;
+        height: 38px;
+        display: block;
+        color: #fff;
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        line-height: 38px;
+        background-position: 0px 0px;
+    }
+
+        .zc a:hover {
+            background-position: 0px -38px;
+        }
+
+.huo {
+    line-height: 35px;
+    color: #898989;
+    font-size: 12px;
+}
+
+    .huo span {
+        padding: 0px 5px 0px 7px;
+    }
+
+.zhucezhanghao_box {
+    padding-top: 8px;
+    border-bottom: 1px solid #d4d4d4;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+    .zhucezhanghao_box p {
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+.cha_p {
+    color: #262626;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.img_p {
+    margin-right: 10px;
+    width: 40px;
+}
+
+.lijiyanzheng a {
+    width: 164px;
+    height: 37px;
+    line-height: 37px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background: url(http://pubimage.360doc.com/button/button.gif) no-repeat 0px -236px;
+    margin: 32px auto;
+    text-decoration: none;
+    display: block;
+}
+
+    .lijiyanzheng a:hover {
+        background: url(http://pubimage.360doc.com/button/button.gif) no-repeat 0px -274px;
+    }
+
+.fooderwz {
+    width: 650px;
+    border-top: 2px solid #f0f0f0;
+    margin: 30px auto;
+    padding-top: 16px;
+    text-align: left;
+}
+
+    .fooderwz span {
+        color: #cb4343;
+        font-weight: bold;
+    }
+
+.cha_p img {
+    vertical-align: middle;
+}
+ 
+.ts1 {
+    background-position: 0px 0px;
+}
+
+.ts2 {
+    background-position: 0px -37px;
+}
+
+/*WorldMobile*/
+.zcbasicinput2{
+	width:153px!important;
+	padding-left:90px;
+	*padding-left:90px; 
+	*width:152px;
+	position: absolute;
+}
+.newWorld{	
+	width: 85px;
+	height: 35px;
+    _height:34px;
+	border-right: 1px solid #c8c8c8;
+	position: absolute;
+	top: 1px;
+	left: 7px;
+	*left: 8px;
+	*top:2px; 
+	color:#151515;
+	line-height: 34px;
+	text-indent: 8px;
+	background:#fff url(http://pubimage.360doc.com/register1/BlackTriangle.jpg) no-repeat 66px center ;
+	font-size: 12px;
+	cursor: pointer;
+	z-index: 3555;
+}
+.country{
+	width: 138px;
+	height: 228px;
+	border:1px solid #cccccc;
+	border-top:none;
+	overflow: auto;
+	background: #ffffff;
+	position: absolute;
+	left:-1px;
+    _left:-2px;
+	top:36px;
+	_top:35px;
+	z-index:999955;
+}
+.country ul{
+	margin-top: 5px;
+}
+.country li{
+	height: 22px;
+	line-height: 22px;
+	cursor: pointer;
+}
+.countrylihover{
+	background: #e7e7e7;
+}
