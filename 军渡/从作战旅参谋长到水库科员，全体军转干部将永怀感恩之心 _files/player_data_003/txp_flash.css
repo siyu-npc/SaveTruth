@@ -1,0 +1,34 @@
+@keyframes txpStarBlink{0%{opacity:0;transform:scale(0.2)}
+50%{opacity:1;transform:scale(1)}
+100%{opacity:0;transform:scale(0.2)}}
+.txp_overlay_expired{position:absolute;z-index:5;left:0;top:0;width:100%;height:100%;display:-webkit-box;-webkit-box-orient:vertical;-webkit-box-pack:center;-webkit-box-align:center;display:-webkit-flex;-webkit-align-items:center;-webkit-justify-content:center;-webkit-flex-direction:column;display:flex;align-items:center;justify-content:center;flex-direction:column;font-family:PingFangSC,Helvetica Neue,Helvetica;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;text-align:center;background-color:rgba(45,45,45,.98)}
+.txp_overlay_expired .txp_expired_title{margin-bottom:25px;color:#ccc;font-size:24px}
+.txp_overlay_expired .txp_expired_hint{margin-bottom:50px;color:#999;font-size:14px}
+.txp_expired_choice{position:relative}
+.txp_expired_choice .txp_option{position:relative;display:inline-block;width:200px;text-align:center}
+.txp_expired_choice .txp_btn_option{position:relative;display:block;width:114px;height:114px;margin:auto;background-color:#333;border-radius:100%}
+.txp_expired_choice .txp_option:hover .txp_btn_option{background-color:#3E3E3E}
+.txp_expired_choice .txp_btn_option:after,.txp_option .txp_option_text:before,.txp_expired_choice .txp_star{background:url(/tencentvideo/txp/style/img/svg/sprite_expired.svg) 0 0 no-repeat}
+.txp_expired_choice .txp_btn_option:after{content:'';position:absolute;top:50%;left:50%;margin-left:-30px;margin-top:-30px;width:60px;height:60px}
+.txp_expired_choice .txp_option_h5 .txp_btn_option:after{background-position:0 -60px}
+.txp_expired_choice .txp_option_text{display:block;padding-top:20px;font-size:16px;color:#999}
+.txp_expired_choice .txp_option:hover .txp_option_text{color:#ccc}
+.txp_expired_choice .txp_or{position:absolute;left:50%;top:53px;margin-left:-20px;color:#999}
+.txp_option .txp_option_text:before{content:'';display:inline-block;width:16px;height:16px;margin:3px 5px 0 0;background-position:-16px -146px;vertical-align:top}
+.txp_option_h5 .txp_option_text:before{content:'';display:inline-block;width:16px;height:16px;background-position:0 -146px}
+.txp_expired_choice .txp_star{position:absolute;width:26px;height:26px;background-position:0 -120px;animation:txpStarBlink 2s linear infinite both}
+.txp_expired_choice .txp_star_1{left:108px;top:22px}
+.txp_expired_choice .txp_star_2,.txp_expired_choice .txp_star_3{width:12px;height:12px;left:108px;top:48px;background-position:-40px -122px;animation-delay:.5s}
+.txp_expired_choice .txp_star_3{left:79px;top:35px;animation-delay:.9s;background-position:-28px -122px}
+.txp_expired_close{position:absolute;right:10px;top:10px;width:26px;height:26px;background-color:#4a4a4a;border-radius:100%}
+.txp_expired_close:hover{background-color:#444}
+.txp_expired_close:after,.txp_expired_close:before{content:'';position:absolute;left:6px;top:12px;width:15px;height:1px;background-color:#fff;transform:rotate(45deg)}
+.txp_expired_close:after{transform:rotate(-45deg)}
+.txp_html_fullscreen *{visibility:hidden}
+.txp_html_fullscreen body{overflow:hidden}
+.txp_html_fullscreen .txp_player,.txp_html_fullscreen .txp_player *{visibility:visible}
+.txp_player{position:relative;display:block}
+.txp_player embed,.txp_player object{position:absolute;top:0;left:0}
+.txp_overlay_expired .txp_expired_title{margin-top:70px}
+.txp_expired_choice .txp_btn_option:after,.txp_option .txp_option_text:before,.txp_expired_choice .txp_star{background-image:url(//i.gtimg.cn/qqlive/images/20161009/sprite_expired.png)}
+#CssGaga{content:"161201161333,blu,334"}
