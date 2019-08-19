@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+    var moonsafe_id = 29715;
+    var moonsafe_key = 0;
+
+    var loglist = [];
+    var monitorlog = {};
+    var isArray = function(val){
+        return Object.prototype.toString.call(val) == '[object Array]';
+    };
+    var addReport = function(offset, log, val){
+        val = val || 1;
+        if (!monitorlog[offset]){
+            monitorlog[offset] = 0;
+        }
+        monitorlog[offset] += val;
+        if (!!log){
+            if (isArray(log)){
+                loglist = loglist.concat(log);
+            }else{
+                loglist.push(log);
+            }
+        }
+        setTimeout(function(){
+            report();
+        }, 1500);
+    };
+
+    var report = function(){
+        var idkey = [];
+        var lc = loglist.length;
+        var log = ["r=" + Math.random()];
+        for (var i in monitorlog){
+            if (monitorlog.hasOwnProperty(i)){
+                idkey.push(moonsafe_id + "_" + (i*1+moonsafe_key*1) + "_" + monitorlog[i]);
+            }
+        }
+        for (var i = 0; i < lc; ++i){
+            if (i >= 10){ 
+                
+                break; 
+            }
+            log.push("log" + i + "=" + encodeURIComponent(loglist[i]));
+        }
+
+        if (idkey.length == 0 && log.length <= 1){
+            return ;
+        }
+        
+        var data = "idkey=" + idkey.join(";") + "&lc=" + (log.length-1) + "&" + log.join("&");
+
+        var xmlobj;    
+        if(window.ActiveXObject){    
+            try{  
+               xmlobj = new ActiveXObject("Msxml2.XMLHTTP");  
+            }catch (e){  
+                try{
+                    xmlobj = new ActiveXObject("Microsoft.XMLHTTP");
+                }catch (E){
+                    xmlobj = false;
+                }
+            }
+        }else if(window.XMLHttpRequest){    
+            xmlobj = new XMLHttpRequest();  
+        }
+        if(!xmlobj)return;
+
+        xmlobj.open("POST", location.protocol + "//mp.weixin.qq.com/mp/jsmonitor?", true);         
+        xmlobj.setRequestHeader("cache-control","no-cache");
+        xmlobj.setRequestHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");    
+        xmlobj.setRequestHeader("X-Requested-With", "XMLHttpRequest");  
+      
+        
+        xmlobj.onreadystatechange = function() {
+            if(xmlobj.readyState === 4) {
+                
+                if(loglist.length > 10) {
+                    loglist = loglist.slice(10);
+                    report();
+                } else {
+                    loglist = [];
+                    monitorlog = {};
+                }
+            }
+        };
+        loglist = [];
+        monitorlog = {};
+        xmlobj.send(data);    
+    };
+    </script>
+        <script>
+        window.test_prevent_execute = false;
+        if (MutationObserver) {
+            new MutationObserver(function(mutations) {
+                mutations.forEach(function(mutation) {
+                    var nodes = mutation.addedNodes;
+                    for (var i = 0; i < nodes.length; i++) {
+                        var node = nodes[i];
+                        if (node.tagName === 'SCRIPT' && node.id == 'test_prevent_execute') {
+                            node.parentNode && node.parentNode.removeChild(node);
+                        }
+                    }
+                });
+            }).observe(document, {subtree: true, childList: true});
+        }
+    </script>
+    
+    <script>
+        if (MutationObserver && window.test_prevent_execute) {
+            addReport(26, ["[moonsafe][moonsafe][not_prevent_execute][ua]="+navigator.userAgent]);
+        }
+    </script>
+    
+    <script type="text/javascript">
+    document.write('<meta http-equiv="Content-Security-Policy" content="script-src \'unsafe-inline\' \'nonce-1\'">');
+    </script><meta http-equiv="Content-Security-Policy" content="script-src 'unsafe-inline' 'nonce-1'">
+    <script type="text/javascript">
+    window.a = 1;
+    </script>
+    <script type="text/javascript" nonce="1">
+    var level = "2";
+    if (typeof window.a !== "undefined") {
+        
+        addReport(13, ["[moonsafe][csp][notsupport_level2][ua]="+navigator.userAgent]);
+        
+        if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+            addReport(23, ["[moonsafe][csp][notsupport_level2_ios][ua]="+navigator.userAgent]);
+        }
+    }
+    addReport(14, ["[moonsafe][csp][allreport_level2]"]);
+    
+    var MutationObserver = window.WebKitMutationObserver||window.MutationObserver||window.MozMutationObserver;
+    if (!MutationObserver) {
+        addReport(24, ["[moonsafe][moonsafe][notsupport_MutationObserver][ua]="+navigator.userAgent]);
+    }
+    </script>
+        <title></title>
+</head>
+<body>
+
+
+</body></html>
